@@ -5,14 +5,17 @@
 
 int main()
 {
-    for (int i = 1; i <= 5; i++) {
+    int i = 1;
+    while (i <= 5) {
         if (i == 3) {
+            i++;
             continue;
         }
         if (i == 4) {
             break;
         }
         std::cout << i << std::endl;
+        i++;
     }
     return 0;
 }
